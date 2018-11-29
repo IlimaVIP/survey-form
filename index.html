@@ -3,9 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
- 
+    <div class="wrap">
+        <div class="inner">
+          <h1 id="title" class="text-center">Survey Form</h1>
+        </div>
+        <div class="container">
+          <p id="description" class="text-center">Which type of coffee do you like the most?</p>
+          <form id="survey-form">
+            <div class="form-group">
+              <label for="name" id="name-label">First Name (required)</label>
+              <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1" id="email-label">Email address (required)</label>
+              <input type="email" id="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="number" id="number-label">Age</label>
+              <input type="number" min="1" max="100" class="form-control" id="number" placeholder="Your age">
+            </div>
+            
+            <div class="form-group">
+              <label for="dropdown">What kind of temperature do you like?</label>
+              <select class="form-control" id="dropdown">
+                <option value="none">---</option>
+                <option value="hot">Hot</option>
+                <option value="cold">Cold</option>
+                <option value="warm">Warm</option>
+              </select>
+            </div><br />
+            <hr><br />
+            <div class="">
+              <p style="font-size: 18px;">Which type of brand? </p>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Starbucks" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Starbucks
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Maxwell_House">
+                <label class="form-check-label" for="exampleRadios2">
+                  Maxwell House
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Dunkin_Donuts">
+                <label class="form-check-label" for="exampleRadios2">
+                  Dunkin' Donuts
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Green_Mountain">
+                <label class="form-check-label" for="exampleRadios2">
+                  Green Mountain
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Folgers">
+                <label class="form-check-label" for="exampleRadios2">
+                  Folgers
+                </label>
+              </div>
+            </div><br />
+            <hr><br />
+            <div>
+              <p style="font-size: 18px;">What do you like with it? </p>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="Sugar" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Sugar
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="Cream" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                  Cream
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="Donuts" id="defaultCheck3">
+                <label class="form-check-label" for="defaultCheck3">
+                  Donuts
+                </label>
+              </div>
+            </div><br />
+            <hr><br />
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Comment</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" id="submit" class="btn custom-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+      
+      
+      <!-- Footer -->
+      <footer class="page-footer font-small special-color-dark pt-4">
+      
+          <!-- Footer Elements -->
+          <div class="container">
+      
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1">
+                  <i class="fa fa-facebook"> </i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1">
+                  <i class="fa fa-twitter"> </i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1">
+                  <i class="fa fa-google-plus"> </i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1">
+                  <i class="fa fa-linkedin"> </i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-dribbble mx-1">
+                  <i class="fa fa-dribbble"> </i>
+                </a>
+              </li>
+            </ul>
+            <!-- Social buttons -->
+      
+          </div>
+          <!-- Footer Elements -->
+      
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://ilimavip.github.io/"> ilimavip.github.io</a>
+          </div>
+          <!-- Copyright -->
+      
+        </footer>
+        <!-- Footer -->
+      
+      
 </body>
 </html>
